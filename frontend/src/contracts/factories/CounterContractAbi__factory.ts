@@ -2,37 +2,49 @@
 /* tslint:disable */
 /* eslint-disable */
 
-import type { Provider, Wallet, AbstractAddress } from "fuels";
+import type { Provider, BaseWalletLocked, AbstractAddress } from "fuels";
 import { Interface, Contract } from "fuels";
 import type {
   CounterContractAbi,
   CounterContractAbiInterface,
 } from "../CounterContractAbi";
-const _abi = [
-  {
-    type: "function",
-    name: "count",
-    inputs: [],
-    outputs: [
-      {
-        type: "u64",
+const _abi = {
+  types: [
+    {
+      typeId: 0,
+      type: "()",
+      components: [],
+      typeParameters: null,
+    },
+    {
+      typeId: 1,
+      type: "u64",
+      components: null,
+      typeParameters: null,
+    },
+  ],
+  functions: [
+    {
+      inputs: [],
+      name: "count",
+      output: {
         name: "",
+        type: 1,
+        typeArguments: null,
       },
-    ],
-  },
-  {
-    type: "function",
-    name: "increment",
-    inputs: [],
-    outputs: [
-      {
-        type: "()",
+    },
+    {
+      inputs: [],
+      name: "increment",
+      output: {
         name: "",
-        components: [],
+        type: 0,
+        typeArguments: null,
       },
-    ],
-  },
-];
+    },
+  ],
+  loggedTypes: [],
+};
 
 export class CounterContractAbi__factory {
   static readonly abi = _abi;
@@ -41,7 +53,7 @@ export class CounterContractAbi__factory {
   }
   static connect(
     id: string | AbstractAddress,
-    walletOrProvider: Wallet | Provider
+    walletOrProvider: BaseWalletLocked | Provider
   ): CounterContractAbi {
     return new Contract(
       id,

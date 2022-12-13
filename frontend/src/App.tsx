@@ -12,7 +12,7 @@ const WALLET_SECRET =
   "0xc4a69e0cc4ce1e0b45d25899b3cedced332d193c8a5c706187ffd50aa7591ce6";
 // Create a Wallet from given secretKey in this case
 // The one we configured at the chainConfig.json
-const wallet = new Wallet(
+const wallet = Wallet.fromPrivateKey(
   WALLET_SECRET,
   "https://node-beta-2.fuel.network/graphql"
 );
