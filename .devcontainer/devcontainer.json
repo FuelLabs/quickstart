@@ -3,8 +3,6 @@
     "features": {
         "ghcr.io/devcontainers/features/common-utils:1": {},
         "ghcr.io/FuelLabs/devcontainer-features/fuelup:1": {},
-        "ghcr.io/devcontainers-contrib/features/typescript:2": {},
-        "ghcr.io/devcontainers-contrib/features/npm-package:1": {},
         "ghcr.io/devcontainers/features/node:1": {}
     },
     "customizations": {
