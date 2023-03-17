@@ -5,6 +5,7 @@
         "ghcr.io/FuelLabs/devcontainer-features/fuelup:1": {},
         "ghcr.io/devcontainers/features/rust:1": {},
         "ghcr.io/devcontainers/features/node:1": {}
+        "ghcr.io/devcontainers-contrib/features/typescript:2": {}
     },
     "customizations": {
         "codespaces": {
@@ -12,7 +13,8 @@
         },
         "vscode": {
             "extensions": [
-                "fuellabs.sway-vscode-plugin"
+                "fuellabs.sway-vscode-plugin",
+                "ms-vscode.vscode-typescript-next"
             ]
         }
     }
