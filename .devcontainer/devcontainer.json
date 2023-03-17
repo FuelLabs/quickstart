@@ -15,7 +15,8 @@
         "vscode": {
             "extensions": [
                 "fuellabs.sway-vscode-plugin",
-                "ms-vscode.vscode-typescript-next"
+                "ms-vscode.vscode-typescript-next",
+                "rust-lang.rust-analyzer"
             ]
         }
     }
