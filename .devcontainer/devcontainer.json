@@ -7,6 +7,8 @@
         "ghcr.io/devcontainers/features/rust:1": {},
         "ghcr.io/devcontainers/features/node:1": {}
     },
+    "remoteUser": "codespace",
+    "containerUser": "codespace",
     "customizations": {
         "codespaces": {
             "openFiles": ["README.md"]
