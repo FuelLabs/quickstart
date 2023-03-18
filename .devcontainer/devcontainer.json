@@ -7,9 +7,6 @@
         "ghcr.io/devcontainers/features/rust:1": {},
         "ghcr.io/devcontainers/features/node:1": {}
     },
-    "containerEnv": {
-        "PATH": "$PATH:$_REMOTE_USER_HOME/.fuelup/bin"
-    },
     "customizations": {
         "codespaces": {
             "openFiles": ["README.md"]
