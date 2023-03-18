@@ -8,7 +8,7 @@
         "ghcr.io/devcontainers/features/node:1": {}
     },
     "containerEnv": {
-        "PATH": "${containerEnv:PATH}:${remoteEnv:HOME}/.fuelup/bin"
+        "PATH": "${containerEnv:PATH}:${containerEnv:_REMOTE_USER_HOME}/.fuelup/bin"
     },
     "customizations": {
         "codespaces": {
