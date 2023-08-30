@@ -7,9 +7,6 @@
         "ghcr.io/devcontainers/features/rust:1": {},
         "ghcr.io/devcontainers/features/node:1": {}
     },
-    "onCreateCommand": "export PATH=$PATH:$HOME/.fuelup/bin",
-    "remoteUser": "codespace",
-    "containerUser": "codespace",
     "customizations": {
         "codespaces": {
             "openFiles": ["README.md"]
