@@ -1,20 +1,19 @@
-import React, { useEffect, useState } from "react";
-import "@fuel-wallet/sdk";
+import { useEffect, useState } from "react";
 import "./App.css";
 // Import the contract factory -- you can find the name in index.ts.
 // You can also do command + space and the compiler will suggest the correct name.
 import { CounterContractAbi__factory } from "./contracts";
-
+ 
 // The address of the contract deployed the Fuel testnet
 const CONTRACT_ID =
   "0xa0f2b97f32300d7360b5632e682c1508b326da9a00fbe755646d3809aec90672";
-
+ 
 function App() {
   const [connected, setConnected] = useState<boolean>(false);
   const [account, setAccount] = useState<string>("");
   const [counter, setCounter] = useState<number>(0);
   const [loaded, setLoaded] = useState(false);
-
+ 
   useEffect(() => {
     setTimeout(() => {
       checkConnection();
@@ -22,7 +21,7 @@ function App() {
     }, 200)
     if (connected) getCount();
   }, [connected])
-
+ 
   async function connect() {
     if (window.fuel) {
       try {
@@ -35,7 +34,7 @@ function App() {
       }
     }
   }
-
+ 
   async function checkConnection() {
     if (window.fuel) {
       const isConnected = await window.fuel.isConnected();
@@ -46,7 +45,7 @@ function App() {
       }
     }
   }
-
+ 
   async function getCount() {
     if (window.fuel) {
       const wallet = await window.fuel.getWallet(account);
@@ -55,7 +54,7 @@ function App() {
       setCounter(value.toNumber());
     }
   }
-
+ 
   async function increment() {
     if (window.fuel) {
       const wallet = await window.fuel.getWallet(account);
@@ -70,9 +69,9 @@ function App() {
       }
     }
   }
-
+ 
   if (!loaded) return null
-
+ 
   return (
     <>
       <div className="App">
@@ -92,9 +91,9 @@ function App() {
     </>
   );
 }
-
+ 
 export default App;
-
+ 
 const buttonStyle = {
   borderRadius: "48px",
   marginTop: "10px",
