@@ -20,7 +20,7 @@ function App() {
       setLoaded(true);
     }, 200)
     if (connected) getCount();
-  }, [connected])
+  }, [connected, getCount])
  
   async function connect() {
     if (window.fuel) {
