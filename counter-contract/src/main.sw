@@ -15,11 +15,12 @@ abi Counter {
 impl Counter for Contract {
     #[storage(read)]
     fn count() -> u64 {
-        storage.counter
+        storage.counter.read()
     }
 
     #[storage(read, write)]
     fn increment() {
-        storage.counter = storage.counter + 1;
+        let incremented = storage.counter.read() + 1;
+        storage.counter.write(incremented);
     }
 }
