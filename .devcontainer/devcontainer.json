@@ -2,7 +2,7 @@
     "image": "mcr.microsoft.com/devcontainers/universal:2",
     "features": {
         "ghcr.io/devcontainers/features/common-utils:1": {},
-        "ghcr.io/FuelLabs/devcontainer-features/fuelup:1.0.1": {
+        "ghcr.io/FuelLabs/devcontainer-features/fuelup:1.0.2": {
             "toolchain": "beta-4"
         },
         "ghcr.io/devcontainers-contrib/features/typescript:2": {},
