@@ -4,9 +4,9 @@
 /* eslint-disable */
 
 /*
-  Fuels version: 0.57.0
-  Forc version: 0.44.0
-  Fuel-Core version: 0.20.4
+  Fuels version: 0.71.1
+  Forc version: 0.48.1
+  Fuel-Core version: 0.22.0
 */
 
 import type {
